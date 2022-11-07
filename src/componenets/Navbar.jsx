@@ -36,8 +36,6 @@ const Navbar = () => {
     screenSize,
     setScreenSize,
     currentColor,
-    currentLanguage,
-    languageChanger,
   } = useStateContext();
 
   useEffect(() => {
