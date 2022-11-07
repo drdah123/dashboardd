@@ -8,7 +8,6 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import avatar from '../data/avatar.jpg';
 import { Cart, Chat, Notification, UserProfile } from '.';
 import { useStateContext } from '../contexts/ContextProvider';
-import { TbWorld } from 'react-icons/tb';
 import Language from './Language';
 
 const NavButton = ({ title, customfunc, icon, color, dotColor }) => (
@@ -30,7 +29,6 @@ const NavButton = ({ title, customfunc, icon, color, dotColor }) => (
 
 const Navbar = () => {
   const {
-    activeMenu,
     setActiveMenu,
     isClicked,
     setIsClicked,
@@ -38,7 +36,8 @@ const Navbar = () => {
     screenSize,
     setScreenSize,
     currentColor,
-    setCurrentLanguage,
+    currentLanguage,
+    languageChanger,
   } = useStateContext();
 
   useEffect(() => {
@@ -67,6 +66,7 @@ const Navbar = () => {
         icon={<AiOutlineMenu />}
       />
       <div className="flex">
+        <Language />
         <NavButton
           title="Cart"
           customfunc={() => handleClick('cart')}
@@ -87,12 +87,7 @@ const Navbar = () => {
           color={currentColor}
           icon={<RiNotification3Line />}
         />
-        <NavButton
-          title="Language"
-          customfunc={() => handleClick('Language')}
-          color={currentColor}
-          icon={<TbWorld />}
-        />
+
         <TooltipComponent content="User profile" position="BottomCenter">
           <div
             className=" flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg"
@@ -114,7 +109,6 @@ const Navbar = () => {
         {isClicked.chat && <Chat />}
         {isClicked.notifications && <Notification />}
         {isClicked.userProfile && <UserProfile />}
-        {isClicked.Language && <Language />}
       </div>
     </div>
   );
