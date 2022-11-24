@@ -9,7 +9,7 @@ const Orders = () => {
   const {currentLanguage} = useStateContext()
   return (
     <div className='m-2 md:m-10 p-2 md:p-10 bg-white rounded-3xl sm:mt-14'>
-      {currentLanguage=== 'Arbic' &&<Header category="صفحة" title='الطلبات' />}
+      {currentLanguage=== 'Arabic' &&<Header category="صفحة" title='الطلبات' />}
       {currentLanguage=== 'English' &&<Header category="page" title='orders' />}
       <GridComponent
       id='gridcomp'

@@ -9,7 +9,7 @@ const Editor = () => {
   const {currentLanguage} = useStateContext()
   return (
     <div className="m-2 md:m-10 p-2 md:p-10 rounded-3xl bg-white mt-24">
-      {currentLanguage=== 'Arbic' &&<Header category="تطبيق" title='المعدل' />}
+      {currentLanguage=== 'Arabic' &&<Header category="تطبيق" title='المعدل' />}
       {currentLanguage=== 'English' &&<Header category="app" title='editor' />}
       <div>
         <RichTextEditorComponent>

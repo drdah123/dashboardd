@@ -9,7 +9,7 @@ const Calendar = () => {
   const {currentLanguage} = useStateContext()
   return (
     <div className='m-2 md:m-10 mt-24 p-2 bg-white rounded-3xl '>
-      {currentLanguage=== 'Arbic' &&<Header category="تطبيق" title='التقويم' />}
+      {currentLanguage=== 'Arabic' &&<Header category="تطبيق" title='التقويم' />}
       {currentLanguage=== 'English' &&<Header category="app" title='calendar' />}
       <ScheduleComponent
       height='650px'

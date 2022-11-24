@@ -6,7 +6,7 @@ import { useStateContext } from '../contexts/ContextProvider';
 
 const Ecommerce = () => {
   const { currentColor, currentLanguage } = useStateContext();
-  const arabic = currentLanguage === 'Arbic';
+  const arabic = currentLanguage === 'Arabic';
   const english = currentLanguage === 'English';
   return (
     <div className="mt-12">
@@ -40,9 +40,9 @@ const Ecommerce = () => {
           </div>
         </div>
         <div className="flex m-3 flex-wrap justify-center gap-1 items-center mt-10">
-          {earningData.map((item) => (
+          {earningData.map((item, i) => (
             <div
-              key={item.title}
+              key={i}
               className="bg-white dark:text-gray-200
                dark:bg-secondary-dark-bg md:w-56 p-4 pt-9 rounded-2xl lg:flex-1 "
             >

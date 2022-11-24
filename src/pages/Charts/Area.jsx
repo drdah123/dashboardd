@@ -9,7 +9,7 @@ const Area = () => {
   const {currentMode, currentLanguage} = useStateContext()
   return (
     <div className="m-4 mt-24 md:m-10 p-10 bg-white dark:bg-secondary-dark-bg rounded-3xl">
-      {currentLanguage=== 'Arbic' &&<Header category="الرسومات" title='المنطقة' />}
+      {currentLanguage=== 'Arabic' &&<Header category="الرسومات" title='المنطقة' />}
       {currentLanguage=== 'English' &&<Header category="charts" title='area' />}
       <ChartComponent
       id='area-chart'

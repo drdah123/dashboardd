@@ -9,7 +9,7 @@ const Language = () => {
       <select
         onChange={languageChanger}
         defaultValue={currentLanguage}
-        className=" right-[29%]  absolute mt-2 text-center pl-2 bg-white hover:drop-shadow-xl active:border-0 rounded-[5px] dark:text-white dark:bg-secondary-dark-bg text-lg"
+        className="    mt-2 text-center pl-2 bg-white hover:drop-shadow-xl active:border-0 rounded-[5px] dark:text-white dark:bg-secondary-dark-bg text-lg"
         style={{ color: currentColor }}
       >
         <option value="English">English</option>

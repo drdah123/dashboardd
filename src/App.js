@@ -40,7 +40,7 @@ const App = () => {
         <div className="relative flex dark:bg-main-dark-bg">
           <div className="fixed right-4 bottom-4" style={{ zIndex: '1000' }}>
             <TooltipComponent
-              content={`${currentLanguage === 'Arbic' ? 'الاعدادات' : ''}${
+              content={`${currentLanguage === 'Arabic' ? 'الاعدادات' : ''}${
                 currentLanguage === 'English' ? 'Settings' : ''
               }`}
               position="Top"

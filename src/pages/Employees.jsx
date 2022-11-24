@@ -10,7 +10,7 @@ import { useStateContext } from '../contexts/ContextProvider'
     const {currentLanguage}= useStateContext()
     return (
     <div className='m-2 md:m-10 p-2 md:p-10 bg-white rounded-3xl sm:mt-14'>
-      {currentLanguage=== 'Arbic' &&<Header category="صفحة" title='الموظفين' />}
+      {currentLanguage=== 'Arabic' &&<Header category="صفحة" title='الموظفين' />}
       {currentLanguage=== 'English' &&<Header category="page" title='employees' />}
       <GridComponent
       id='gridcomp'

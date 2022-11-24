@@ -12,7 +12,7 @@ const ColorPicker = () => {
   const {currentLanguage}= useStateContext()
   return (
     <div className='m-2 md:m-10 p-2 md:p-10 rounded-3xl bg-white mt-24'>
-      {currentLanguage=== 'Arbic' &&<Header category="تطبيق" title='حامل الالوان' />}
+      {currentLanguage=== 'Arabic' &&<Header category="تطبيق" title='حامل الالوان' />}
       {currentLanguage=== 'English' &&<Header category="app" title='color-picker' />}
       <div className='text-center'>
         <div id='preview' className='mt-0'>
